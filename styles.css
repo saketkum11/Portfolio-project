@@ -9,8 +9,8 @@
     
 }
 body{
-    background-color: var(--primary-color);
     font-family: 'Rubik', sans-serif;
+    padding: 2rem;
 }
 
 /* navigation */
@@ -28,11 +28,14 @@ body{
 }
 .container{
     width: 80%;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
 }
 .nav-list{
     display: flex;
 }
+
+/* list */
