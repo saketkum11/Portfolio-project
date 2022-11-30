@@ -94,3 +94,8 @@ body{
     flex-shrink: 1;
     flex-basis: 0;
 }
+/* experience card */
+
+.card_content h2{
+    padding-bottom: 1rem;
+}
