@@ -70,3 +70,27 @@ body{
     font-size: 3rem;
 
 }
+/* card section*/
+.card_section{
+    width: 80%;
+    display: flex;
+    gap: 5rem;
+}
+.card_icon{
+    font-size: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.card_content h3{
+
+    padding-bottom: 0.5rem;
+}
+.card_content p{
+    font-size: 1rem;
+    opacity: 0.8;
+}
+.card{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
