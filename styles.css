@@ -11,6 +11,7 @@
 body{
     font-family: 'Rubik', sans-serif;
     padding: 2rem;
+    background-color: var(--primary-color);
 }
 
 /* navigation */
@@ -19,6 +20,10 @@ body{
     text-decoration: none;
     color: var(--secondary-color);
     font-size: 1.25rem;
+
+}
+.logo {
+    
 }
 .list-style{
     list-style: none;
@@ -27,6 +32,7 @@ body{
     padding: 1rem;
 }
 .container{
+    margin: 0 auto;
     width: 80%;
     display: flex;
     justify-content: space-between;
@@ -37,6 +43,11 @@ body{
 .nav-list{
     display: flex;
 }
+/* main section*/
+.main_section{
+    margin: 0 auto;
+    width: 80%;
+}
 
 /* hero section */
 
@@ -44,14 +55,17 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 5rem;
-    width: 80%;
     padding: 1rem;
+    margin:  auto;
+    margin-top: 6rem;
 
 }
 
 .hero-section img{
    width: 20rem;
+   height: 25rem;
    object-fit: cover;
+   border-radius: 1rem;
 }
 
 .hero_content{
@@ -72,7 +86,19 @@ body{
 }
 /* card section*/
 .card_section{
-    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+
+}
+.section_heading{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding-bottom: 3rem;
+}
+
+.cards{
     display: flex;
     gap: 5rem;
 }
@@ -89,13 +115,37 @@ body{
     font-size: 1rem;
     opacity: 0.8;
 }
+.card_footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    padding-top: 2rem;
+}
 .card{
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0;
+    border: 2px solid #212121 ;
+    border-radius: 0.5rem;
+    padding: 2rem;
 }
 /* experience card */
 
 .card_content h2{
     padding-bottom: 1rem;
+    font-weight: 600;
+}
+/* skills */
+
+.skills_container{
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+   
+}
+.skills_container li{
+     font-size: 2rem;
+     flex: 1 1 0;
 }
