@@ -60,10 +60,12 @@ body{
 }
 
 .hero-section img{
+
    width: 20rem;
    height: 25rem;
    object-fit: cover;
    border-radius: 1rem;
+  
 }
 
 .hero_content{
@@ -81,6 +83,9 @@ body{
     padding-bottom: 10px;
     font-size: 3rem;
 
+}
+.hero_img img{
+    overflow: hidden;
 }
 /* card section*/
 .card_section{
