@@ -10,11 +10,18 @@
 }
 body{
     font-family: 'Rubik', sans-serif;
-    padding: 2rem;
     background-color: var(--primary-color);
+    
 }
 
 /* navigation */
+
+.logo{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 2rem;
+    font-weight: bold;
+}
 
 .link{
     text-decoration: none;
@@ -26,8 +33,14 @@ body{
 .list-style{
     list-style: none;
 }
+
+
 .list{
     padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
 }
 .container{
     margin: 0 auto;
@@ -38,10 +51,42 @@ body{
     background-color: var(--primary-color);
     padding: 0.5rem;
 }
+
 .nav-list{
     display: flex;
 }
+
+.side_navigation{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.nav_humberger{
+    display: none;
+}
+
+/* side nav */
+
+.side_nav{
+    display: none;   
+}
+.cross_icon{
+    padding: 2rem;
+    margin: auto;
+    width: 80%;
+    position: relative;
+}
+.cross_icon_btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
 /* main section*/
+
+
 .main_section{
     margin: 0 auto;
     width: 80%;
@@ -60,18 +105,15 @@ body{
 }
 
 .hero-section img{
-
-   width: 20rem;
-   height: 25rem;
+  
    object-fit: cover;
+   aspect-ratio: 2/1;
    border-radius: 1rem;
+   object-position: top center;
   
 }
 
 .hero_content{
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 45rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,10 +126,10 @@ body{
     font-size: 3rem;
 
 }
-.hero_img img{
-    overflow: hidden;
-}
-/* card section*/
+
+/* card section */
+
+
 .card_section{
 
     display: flex;
@@ -103,7 +145,9 @@ body{
 
 .cards{
     display: flex;
-    gap: 5rem;
+    gap: 4rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 .card_icon{
     font-size: 2rem;
@@ -129,11 +173,13 @@ body{
     flex-direction: column;
     flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: 0;
+    flex-basis: 250px;
     border: 2px solid #212121 ;
     border-radius: 0.5rem;
     padding: 2rem;
 }
+
+
 /* experience card */
 
 .card_content h2{
@@ -146,11 +192,16 @@ body{
     margin-top: 15rem;
     display: flex;
     flex-direction: column;
+    
    
 }
-.skills_container li{
-     font-size: 2rem;
-     flex: 1 1 0;
+
+.skill_list{
+   flex-wrap: wrap;
+    font-size: 1.5rem;
+}
+.skill_lists{
+    flex: 1 1 240px;
 }
 /* experience */
 
@@ -200,4 +251,42 @@ body{
    display: flex;
    justify-content: center;
 
+}
+
+/* responsive media*/
+
+
+@media screen and (max-width:600px) {
+    .hero-section{
+        flex-direction: column-reverse;
+    }
+    
+}
+
+@media screen and (max-width:925px) {
+    .hide_nav{
+        display: none;
+    }
+    .nav_humberger{
+        display:block;
+    }
+}
+@media screen and (max-width:1400px){
+   
+    
+    .hero-section{
+        flex-direction: column-reverse;
+    }
+    .hero_content{
+        justify-content: flex-start;
+        text-align: center;
+        margin-bottom: 0;
+        flex: 1;
+     
+    }
+    .hero_img{
+        flex: 1;
+        margin: auto;
+    }
+    
 }

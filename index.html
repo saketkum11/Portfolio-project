@@ -16,29 +16,57 @@
      
     <header>
         <div class="container">
-            <a href="./index.html" class="link logo ">Saket Porfolio</a>
+            <a href="./index.html" class="logo">Saket Kumar</a>
             <nav>
                 <ul class="list-style nav-list ">
-                    <li class="list"> 
+                    <li class="list hide_nav"> 
                         <a href="/index.html" class="link">Home</a>
                     </li>
-                    <li class="list"> 
+                    <li class="list hide_nav"> 
                         <a href="/project/project.html" class="link">Project</a>
                     </li>
-                    <li class="list"> 
+                    <li class="list hide_nav"> 
                         <a href="#experience" class="link">Experience</a>
                     </li>
-                    <li class="list"> 
+                    <li class="list hide_nav"> 
                         <a href="#skill" class="link">Skills</a>
                     </li>
-                    <li class="list"> 
+                    <li class="list hide_nav"> 
                         <a href="#about" class="link">About</a>
+                    </li>
+                    <li class="list nav_humberger"> 
+                        <button class="link " id="nav_button"><i class="fa-solid fa-bars"></i></button>
                     </li>
                 </ul>
             </nav>
         </div>
 
     </header>
+    
+    <aside class="side_nav cross_icon ">
+        <ul class="list-style side_navigation ">
+            <li class="list"> 
+                <a href="/index.html" class="link">Home</a>
+            </li>
+            <li class="list "> 
+                <a href="/project/project.html" class="link">Project</a>
+            </li>
+            <li class="list "> 
+                <a href="#experience" class="link">Experience</a>
+            </li>
+            <li class="list "> 
+                <a href="#skill" class="link">Skills</a>
+            </li>
+            <li class="list "> 
+                <a href="#about" class="link">About</a>
+            </li>
+        </ul>
+        <div class="cross_icon_btn">
+            <button>
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+    </aside>
 
 
 
@@ -53,12 +81,12 @@
                 <p>Author,Programmer , UI & UX Desing , Researcher </p>
             </div>
             <div class="hero_img">
-              <img src="./image/person.jpg" alt="">
+              <img src="./image/person.jpg"width="400" height="400"  alt="">
             </div>
     
          </section>
 
-         <section class="card_section" id="project">
+         <section class="card_section" >
            
                 <h1 class="section_heading">
                     Project
@@ -100,6 +128,23 @@
                     </div>
                 </div>
                 <div class="card">
+         
+                    <div class="card_icon">
+                        <i class="fa-solid fa-desktop"></i>
+                    </div>
+                    <div class="card_content">
+                        <h3>UI & UX Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum ullam similique voluptatem unde magni quas in corrupti fugiat beatae!</p>
+                    </div>
+                    <div class="card_footer">
+                        <a class="link" href="https://github.com/saketkum11/WebKit-UI.git">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a class="link" href="https://webkit-ui.netlify.app/">Live server</a>
+                        
+                    </div>
+                </div>
+                <div class="card">
              
                     <div class="card_icon">
                         <i class="fa-solid fa-desktop"></i>
@@ -124,20 +169,20 @@
 
             <h1 class="section_heading"> Skills</h1>
 
-            <ul class="list-style nav-list">
-                <li class="list "> 
+            <ul class="list-style nav-list skill_list">
+                <li class="list skill_lists"> 
                     <i class="fa-brands fa-html5"></i>
                     <span>HTML 5</span>
                 </li>
-                <li class="list"> 
+                <li class="list skill_lists"> 
                     <i class="fa-brands fa-css3-alt"></i>
                     <span>CSS 3</span>
                 </li>
-                <li class="list"> 
+                <li class="list skill_lists"> 
                     <i class="fa-brands fa-square-js"></i>
                     <span>Javascript</span>
                 </li>
-                <li class="list"> 
+                <li class="list skill_lists"> 
                     <i class="fa-brands fa-react"></i>
                     <span>React</span>
                 </li>
@@ -200,7 +245,7 @@
             <p> Copyright@ 2022, All rights reserved</p>
          </footer>
 
-    
+    <script src="./index.js"></script>
 </body>
 </html>
 
