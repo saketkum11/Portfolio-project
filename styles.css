@@ -89,7 +89,7 @@ body{
 
 .main_section{
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
 }
 
 /* hero section */
@@ -260,6 +260,9 @@ body{
     .hero-section{
         flex-direction: column-reverse;
     }
+    .hero_img img{
+        width: 100%;
+    }
     
 }
 
@@ -269,6 +272,13 @@ body{
     }
     .nav_humberger{
         display:block;
+    }
+    .list_experience {
+        display: block;
+       
+    }
+    .list_experience p{
+        padding-top: 1rem;
     }
 }
 @media screen and (max-width:1400px){
