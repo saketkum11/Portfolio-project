@@ -247,9 +247,12 @@ body{
     align-items: center;
     padding-top: 2rem;
 }
+/* footer */
+
 .footer{
    display: flex;
    justify-content: center;
+   margin-bottom: 2rem;
 
 }
 
