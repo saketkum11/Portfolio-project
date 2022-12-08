@@ -255,6 +255,9 @@ body{
    margin-bottom: 2rem;
 
 }
+.footer p{
+    text-align: center;
+}
 
 /* responsive media*/
 
@@ -265,7 +268,9 @@ body{
     }
     .hero_img img{
         width: 100%;
+      
     }
+    
     
 }
 
